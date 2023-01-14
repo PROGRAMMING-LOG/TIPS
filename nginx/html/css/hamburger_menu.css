@@ -1,0 +1,161 @@
+body {
+	min-height: 100vh;
+}
+
+.container {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.header header {
+	position: relative;
+	height: 60px;
+	border-bottom: 1px solid #ccc;
+}
+
+.header h1 {
+	position: relative;
+	z-index: 10;
+	padding: 10px;
+	font-size: 1.4rem;
+}
+
+.header .headline {
+	position: relative;
+	padding: 15px 10px;
+	font-size: 1.2rem;
+	background: #ccc;
+}
+
+.header .headline::after {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	width: 10px;
+	height: 10px;
+	margin: -8px 0 0;
+	content: '';
+	border-top: solid 2px #000;
+	border-right: solid 2px #000;
+	transition: all 0.3s;
+	transform: rotate(-225deg);
+}
+
+.main_menu li.active .headline::after {
+	margin: -5px 0 0;
+	transform: rotate(-45deg);
+}
+
+.button_container {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	background: #ccc;
+	border-radius: 8px;
+}
+
+.button_container button {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	transition: all 0.3s;
+	-webkit-tap-highlight-color: rgb(0 0 0 / 0);
+}
+
+.button_container button span {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	margin: -1px 0 0;
+	background: #fff;
+	transition: all 0.3s;
+}
+
+.button_container button span:nth-of-type(2) {
+	margin: -8px 0 0;
+}
+
+.button_container button span:nth-of-type(3) {
+	margin: 6px 0 0;
+}
+
+.button_container button.active {
+	transform: rotate(180deg);
+}
+
+.button_container button.active span:nth-of-type(1) {
+	margin: -1px 0 0;
+	transform: rotate(-45deg);
+}
+
+.button_container button.active span:nth-of-type(2) {
+	margin: -1px 0 0;
+	transform: rotate(45deg);
+}
+
+.button_container button.active span:nth-of-type(3) {
+	opacity: 0;
+}
+
+.menu_container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding-top: 60px;
+	background: #fff;
+	transition: all 0.3s;
+	transform: translateX(100%);
+}
+
+.menu_container.active {
+	transform: translateX(0);
+}
+
+.main_menu li {
+	list-style: none;
+}
+
+.main_menu li:nth-of-type(n+2) {
+	border-top: 1px solid #666;
+}
+
+.main_menu li a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.sub_menu {
+	display: none;
+}
+
+.sub_menu li {
+	padding: 0;
+	border-top: 1px solid #666;
+}
+
+.sub_menu li a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	background: #999;
+}
+
+.sub_menu li a::after {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	width: 10px;
+	height: 10px;
+	margin: -8px 0 0;
+	content: '';
+	border-top: solid 2px #000;
+	border-right: solid 2px #000;
+	transform: rotate(45deg);
+}
