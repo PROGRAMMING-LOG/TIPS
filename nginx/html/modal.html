@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>モーダル - PROGRAMMING LOG</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+	<link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+	<div class="video-thumbnail">
+		<a href="#" class="video-play" rel="https://www.youtube.com/embed/z1_jqU5todM?autoplay=1" data-information="To stop the movie, move the focus to the stop mark and press.">
+			Youtube Modal
+		</a>
+	</div>
+
+	<a href="#" class="image-enlarge" rel="images/img_01_large.png">
+		Image Modal
+	</a>
+
+	<!-- video modal -->
+	<div class="video-modal">
+		<div class="video-modal-background" id=""></div>
+		<div class="button-container">
+			<a href="#" class="close-button">
+				<div class="outer-ring"></div>
+				<div class="inner-ring"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGU+VW5pb248L3RpdGxlPjxkZXNjPkNyZWF0ZWQgdXNpbmcgRmlnbWE8L2Rlc2M+PGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgxMTMgLTMzOTMpIj48ZyBpZD0iVW5pb24iPjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgxMTMuOSAzMzkzLjkpIiBmaWxsPSIjMDYxMTFFIi8+PC9nPjwvZz48ZGVmcz48cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDMuMTgyMTMgNC41OTYxOUwgMCA3Ljc3ODA4TCAxLjQxNDA2IDkuMTkyMzhMIDQuNTk2MTkgNi4wMTAyNUwgNy43NzgzMiA5LjE5MjM4TCA5LjE5MjM4IDcuNzc4MzJMIDYuMDEwMjUgNC41OTYxOUwgOS4xOTIzOCAxLjQxNDA2TCA3Ljc3ODMyIDBMIDQuNTk2MTkgMy4xODIxM0wgMS40MTQwNiAwTCAwIDEuNDE0MzFMIDMuMTgyMTMgNC41OTYxOVoiLz48L2RlZnM+PC9zdmc+" alt="Close"></div>
+			</a>
+		</div>
+		<div class="video-modal-inner">
+			<div class="video-modal-wrapper ready">
+				<div class="video-modal-responsive">
+					<div>
+					<div class="video-information hidden-element"></div>
+					<iframe frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src=""></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- image modal -->
+	<div class="image-modal">
+		<div class="button-container">
+			<a href="#" class="close-button">
+				<div class="outer-ring"></div>
+				<div class="inner-ring"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTEiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxMSAxMSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGU+VW5pb248L3RpdGxlPjxkZXNjPkNyZWF0ZWQgdXNpbmcgRmlnbWE8L2Rlc2M+PGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTgxMTMgLTMzOTMpIj48ZyBpZD0iVW5pb24iPjx1c2UgeGxpbms6aHJlZj0iI3BhdGgwX2ZpbGwiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDgxMTMuOSAzMzkzLjkpIiBmaWxsPSIjMDYxMTFFIi8+PC9nPjwvZz48ZGVmcz48cGF0aCBpZD0icGF0aDBfZmlsbCIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNIDMuMTgyMTMgNC41OTYxOUwgMCA3Ljc3ODA4TCAxLjQxNDA2IDkuMTkyMzhMIDQuNTk2MTkgNi4wMTAyNUwgNy43NzgzMiA5LjE5MjM4TCA5LjE5MjM4IDcuNzc4MzJMIDYuMDEwMjUgNC41OTYxOUwgOS4xOTIzOCAxLjQxNDA2TCA3Ljc3ODMyIDBMIDQuNTk2MTkgMy4xODIxM0wgMS40MTQwNiAwTCAwIDEuNDE0MzFMIDMuMTgyMTMgNC41OTYxOVoiLz48L2RlZnM+PC9zdmc+" alt="Close"></div>
+			</a>
+		</div>
+		<div class="image-modal-background pc_show"></div>
+		<div class="image-modal-inner">
+			<div class="image-modal-wrapper ready">
+				<div class="image-modal-background"></div>
+				<img class="large-image" alt="" />
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="js/modal.js"></script>
+</body>
+</html>
