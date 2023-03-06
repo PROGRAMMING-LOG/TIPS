@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<title>ソート - PROGRAMMING LOG</title>
+	<link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+	<link rel="stylesheet" href="css/sort.css">
+</head>
+<body>
+
+	<div class="sort_container">
+		<main>
+			<h1>SORT</h1>
+
+			<div class="sort_button">
+				<button class="all active">すべて表示 ALL</button>
+				<button class="red">赤いもの - Red</button>
+				<button class="yellow">黄色いもの - Yellow</button>
+				<button class="edible">食べられるもの - Edible</button>
+				<button class="inedible">食べられないもの - Inedible</button>
+				<button class="fruits">フルーツ - Fruits</button>
+				<button class="machine">機械 - Machine</button>
+			</div>
+
+			<ul class="sort_contents">
+				<li class="all red edible fruits">りんご Apple</li>
+				<li class="all edible fruits">オレンジ Orange</li>
+				<li class="all red inedible">ポスト Post</li>
+				<li class="all edible fruits">グレープ Grape</li>
+				<li class="all yellow edible fruits">レモン Lemon</li>
+				<li class="all inedible machine">テレビ TV</li>
+				<li class="all edible">キャベツ cabbage</li>
+				<li class="all yellow edible fruits">バナナ Banana</li>
+				<li class="all edible fruits">パイナップル Pineapple</li>
+				<li class="all inedible machine">パソコン PC</li>
+			</ul>
+		</main>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="js/sort.js"></script>
+</body>
+</html>

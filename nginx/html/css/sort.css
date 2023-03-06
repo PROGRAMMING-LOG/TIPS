@@ -1,0 +1,74 @@
+.sort_container {
+	position: relative;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.sort_container main {
+	text-align: center;
+}
+
+.sort_container h1 {
+	line-height: 1.4;
+}
+
+.sort_button {
+	max-width: 600px;
+	margin: 20px auto 0;
+}
+
+.sort_button button {
+	height: 30px;
+	padding: 0 15px;
+	margin: 5px;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}
+
+.sort_button button.active {
+	background: #ccc
+}
+
+.sort_contents {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 600px;
+	margin: 30px auto 0;
+}
+
+.sort_contents li {
+	width: 100%;
+	padding: 5px;
+	list-style: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.sort_contents li:nth-of-type(1) {
+	border-top: 1px solid #ccc;
+}
+
+/* PC 表示 */
+@media only screen and (min-width: 769px) {
+	.sort_contents {
+		position: relative;
+	}
+
+	.sort_contents::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: block;
+		width: 1px;
+		height: 100%;
+		content: '';
+		background: #ccc;
+	}
+
+	.sort_contents li {
+		width: 200px;
+		margin-top: -1px;
+		border-top: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+}
